@@ -19,7 +19,7 @@ function temaEscuro(tipo) {
 botao.addEventListener('click', () => {
   const isescuro = body.classList.toggle('escuro');
   temaEscuro(isescuro);
-  localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+  localStorage.setItem('tema', isescuro ? 'claro' : 'escuro');
 });
 
 // Scroll suave para links de navegação
