@@ -7,19 +7,29 @@
 }
 
 :root {
+  --fundo-principal: #C4DDF2;
+  --texto: #ffffff;
+  --texto-inverso: #fff4cc;
+  --destaque: #1B1640;
+  --destaque-inverso: #2651A6;
+  --fundo-card:#e9e8e6 ;
+} 
+
+body.escuro{
   --fundo-principal: #925331;
   --texto: #FAF8F4;
   --texto-inverso: #fff9c6;
   --destaque: #1a1303;
   --destaque-inverso: #6b400e;
   --fundo-card:#ffdfba ;
-} 
+}
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -32,6 +42,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 nav#menu ul {
